@@ -1,0 +1,56 @@
+{
+  "name": "n8n-nodes-oauth2-token",
+  "version": "0.1.0",
+  "description": "n8n node to manage OAuth2 tokens",
+  "keywords": [
+    "n8n-community-node-package",
+    "oauth2",
+    "token",
+    "n8n"
+  ],
+  "license": "MIT",
+  "homepage": "https://n8n.io",
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/n8n-nodes-oauth2-token.git"
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && cp -R src/nodes/OAuth2Token/*.json dist/nodes/OAuth2Token/ && cp -R src/nodes/OAuth2Token/*.svg dist/nodes/OAuth2Token/",
+    "dev": "tsc --watch",
+    "format": "prettier --write .",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/OAuth2Api.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/OAuth2Token/OAuth2Token.node.js"
+    ]
+  },
+  "dependencies": {
+    "n8n-core": "^1.0.0",
+    "n8n-workflow": "^1.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "eslint": "^9.23.0",
+    "prettier": "^3.5.3",
+    "ts-loader": "^9.4.2",
+    "typescript": "~4.9.5"
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"node": "n8n-nodes-base.OAuth2Token",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": [
+		"Development",
+		"Utility"
+	],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://oauth.net/2/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://oauth.net/2/"
+			}
+		]
+	},
+	"alias": ["Auth", "Authentication", "OAuth", "Token"]
+} 
